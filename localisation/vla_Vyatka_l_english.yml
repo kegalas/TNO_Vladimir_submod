@@ -1,0 +1,45 @@
+﻿l_english:
+ 
+ POLITICS_Vladimir_DESC:0 "弗拉基米尔，塞里斯社会主义人民共和国主席。"
+ POLITICS_vla_Dong_DESC:0 "董公，臭几把蝈楠。"
+ POLITICS_vla_WangJing_DESC:0 "王晶，臭几把蝈楠。"
+ POLITICS_vla_QinHong_DESC:0 "钦鸿，安那其。"
+ 
+ KIR_YiXiangJi_for:0 "意象集"
+ KIR_Vladimir_hog:0 "弗拉基米尔"
+ KIR_DangDangJie_sec:0 "当当姐"
+ KIR_MingDi_eco:0 "鸣镝"
+ KIR_DongGong_hog:0 "董公"
+
+ KIR.6556.t:0 "异次元的来客上台！"
+ KIR.6556.d:0 "据电报，一位异次元的来客突袭了维亚特卡沙皇的住所，并宣告塞里斯社会主义人民共和国成立。"
+ KIR.6556.a:0 "我不好说我擦。"
+
+ KIR.6557.t:0 "清洗内阁"
+ KIR.6557.d:0 "Vladimir上台的第一件事：清洗！"
+ KIR.6557.a:0 "大的来了。"
+ 
+ KIR_Vladimir_start:0 "异次元的新面孔？"
+ KIR_Vladimir_develop_gov:0 "弗拉基米尔狂暴建设政治"
+ KIR_Vladimir_add_stability:0 "弗拉基米尔狂暴安定国家"
+ KIR_Vladimir_add_war_support:0 "弗拉基米尔狂暴强军"
+ 
+ hog_ambitious_pragmatist: "野心勃勃的实干家"
+ eco_vla_genius: "天才"
+ vla_great_red_army:0 "红军最伟大"
+ vla_great_red_army_desc:0 "红军最伟大，弗拉基米尔说了算。"
+ 
+ KIR_socialist_vla:0 "维亚特特卡"
+ KIR_socialist_vla_DEF:0 "维亚特特卡"
+ KIR_socialist_vla_ADJ:0 "维亚特特卡"
+ KIR_socialist_vla_party:0 "弗党"
+ KIR_socialist_vla_party_long:0 "弗党"
+ 
+ socialist_vla:0 "马克思-列宁主义（弗派）"
+ socialist_vla_noun:0 "马克思-列宁主义（弗派）"
+ socialist_vla_desc:0 "马克思-列宁主义（弗派）" 
+ socialist_vla_subtype_desc:0 "马克思-列宁主义（弗派），是弗拉基米尔从异世界偷过来的缝合主义。" 
+ 
+
+
+

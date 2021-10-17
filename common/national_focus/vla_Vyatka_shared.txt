@@ -1,0 +1,79 @@
+#####################
+### Vladimir Tree ###
+#####################
+
+shared_focus = {
+	id = KIR_Vladimir_start
+	icon = GFX_MCW_Compensation_For_Russians
+	cost = 1.00
+	ai_will_do = { 
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = KIR_return_of_the_tsar
+	}
+	x = 12
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KIR_Vladimir_start"
+		country_event = { id = KIR.6556 }
+		hidden_effect = {
+			load_focus_tree = { tree = KIR_Vladimir_start_tree keep_completed = no }
+		}
+	}
+}
+
+
+shared_focus = {
+	id = KIR_Vladimir_develop_gov
+	icon = GFX_generic_crowd_cheering
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KIR_Vladimir_develop_gov"
+		add_political_power = 1500
+	}
+}
+
+shared_focus = {
+	id = KIR_Vladimir_add_stability
+	icon = GFX_goal_KIR_Many_Shades_of_Monarchism 
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KIR_Vladimir_develop_gov
+	}
+	x = -2
+	y = 2
+	relative_position_id = KIR_Vladimir_develop_gov
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KIR_Vladimir_add_stability"
+		add_stability = 0.5
+	}
+}
+
+shared_focus = {
+	id = KIR_Vladimir_add_war_support
+	icon = GFX_MAG_Acquire_Advisors
+	cost = 1.00
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KIR_Vladimir_develop_gov
+	}
+	x = 2
+	y = 2
+	relative_position_id = KIR_Vladimir_develop_gov
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KIR_Vladimir_add_war_support"
+		add_war_support = 0.5
+	}
+}
+

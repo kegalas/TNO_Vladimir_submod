@@ -1,0 +1,113 @@
+ideas = {
+	head_of_government = {
+		KIR_Vladimir_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KIR_Vladimir_hog"}
+			allowed = { original_tag = KIR }
+			picture = ""
+			available = {
+				has_country_leader = {
+					name = "Vladimir"
+					ruling_only = yes
+				}
+			}
+			visible = {
+				has_country_leader = {
+					name = "Vladimir"
+					ruling_only = yes
+				}
+			}
+			traits = {
+				head_of_government
+				socialist_vla
+				hog_happy_amateur
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+		KIR_DongGong_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KIR_Vladimir_hog"}
+			allowed = { original_tag = KIR }
+			picture = ""
+			available = {
+				has_country_leader = {
+					name = "Vladimir"
+					ruling_only = yes
+				}
+			}
+			visible = {
+				has_country_leader = {
+					name = "Vladimir"
+					ruling_only = yes
+				}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_ambitious_pragmatist
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		KIR_DangDangJie_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KIR_DangDangJie_sec"}
+			allowed = { original_tag = KIR }
+			picture = ""
+			available = {
+				has_government = socialist_vla
+			}
+			visible = {
+				has_government = socialist_vla
+			}
+			traits = {
+				security_minister
+				socialist_vla
+				sec_secret_police_chief
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		KIR_YiXiangJi_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KIR_YiXiangJi_for"}
+			allowed = { original_tag = KIR }
+			picture = ""
+			available = {
+					has_government = socialist_vla
+			}
+			visible = {
+				has_government = socialist_vla
+			}
+			traits = {
+				foreign_minister
+				socialist_vla
+				for_seasoned_ambassador
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		KIR_MingDi_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KIR_MingDi_eco"}
+			allowed = { original_tag = KIR }
+			picture = ""
+			available = {
+				has_government = socialist_vla
+			}
+			visible = {
+				has_government = socialist_vla
+			}
+			traits = {
+				economy_minister
+				socialist_vla
+				eco_vla_genius
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+}

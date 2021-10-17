@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		vla_great_red_army = {
+		
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = RUS_gorki_tank_factory
+			
+			modifier = {
+				land_reinforce_rate = 0.25
+				army_org_factor = 0.25
+				
+			}
+					
+		}
+	}
+}

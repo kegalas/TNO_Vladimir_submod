@@ -1,0 +1,36 @@
+ideologies = {
+	socialist_vla = {
+		types = {
+			socialist_vla_subtype = {}
+			}
+		dynamic_faction_names = {
+			"FACTION_NAME_SOCIALIST_1"
+			"FACTION_NAME_SOCIALIST_2"
+			"FACTION_NAME_SOCIALIST_3"
+			"FACTION_NAME_SOCIALIST_4"
+			"FACTION_NAME_SOCIALIST_5"
+			"FACTION_NAME_SOCIALIST_6"
+		}
+		color = { 242 156 159 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}		
+		modifiers = {
+			join_faction_tension = 1.00
+			generate_wargoal_tension = 1.00
+			lend_lease_tension = 1.00
+			ai_get_ally_desire_factor = -500
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 15.0
+			navy_intel_to_others = 15.0
+			airforce_intel_to_others = 15.0
+		}
+		ai_neutral = yes	
+		can_be_boosted = no
+
+	}
+}

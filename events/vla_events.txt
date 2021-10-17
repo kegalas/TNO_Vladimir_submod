@@ -1,0 +1,132 @@
+
+add_namespace = KIR #Regular events
+add_namespace = vyatkaexp #Expansion tree events
+add_namespace = vyatkareg #Regional events
+add_namespace = vyatkasuper #Superregional events
+
+
+
+country_event = { #Vladimir shows up #修改自event NIK.362
+	id = KIR.6556
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KIR.6556"}
+	title = KIR.6556.t
+	desc = KIR.6556.d
+	picture = GFX_report_event_serov
+
+	is_triggered_only = yes
+
+	option = {
+		name = KIR.6556.a
+		set_country_flag = K
+		kill_country_leader = yes
+		set_party_name = {
+			ideology = socialist_vla
+			long_name = "赛里斯共产党"
+			name = "赛里斯共产党"
+		}
+		
+		set_party_name = {
+			ideology = socialist
+			long_name = "无政府主义（钦派）"
+			name = "无政府主义（钦派）"
+		}
+		
+		set_party_name = {
+			ideology = social_democrat
+			long_name = "玫瑰党"
+			name = "玫瑰党"
+		}
+		
+		create_country_leader = {
+			name = "Vladimir"
+			desc = "POLITICS_Vladimir_DESC"
+			picture = "Portrait_Vyatka_Vladimir.dds"
+			expire = "1999.1.1"
+			ideology = socialist_vla_subtype
+			traits = {
+				prince_of_terror
+			}
+		}
+		
+		create_country_leader = {
+			name = "WangJing"
+			desc = "POLITICS_vla_WangJing_DESC"
+			picture = ""
+			expire = "1999.1.1"
+			ideology = social_democrat_subtype
+			traits = {
+				prince_of_terror
+			}
+		}
+		
+		create_country_leader = {
+			name = "QinHong"
+			desc = "POLITICS_vla_QinHong_DESC"
+			picture = ""
+			expire = "1999.1.1"
+			ideology = socialist_subtype
+			traits = {
+				prince_of_terror
+			}
+		}
+		
+		add_popularity = { 
+			ideology = socialist_vla
+			popularity = +0.5
+		}
+		
+		add_popularity = { 
+			ideology = social_democrat
+			popularity = +0.05
+		}
+		
+		add_popularity = { 
+			ideology = socialist
+			popularity = +0.025
+		}
+		
+		set_politics = {
+			ruling_party = socialist_vla
+			last_election = "1989.6.4"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		
+		add_ideas = vla_great_red_army
+		
+		hidden_effect = {
+			country_event = {
+				id = KIR.6557
+				days = 1
+			}
+			set_cosmetic_tag = KIR_Vladimir
+			kill_ideology_leader = social_liberal
+			kill_ideology_leader = social_conservative
+			kill_ideology_leader = authoritarian_democrat
+			kill_ideology_leader = fascism
+		}
+	}
+}
+
+country_event = { #清洗内阁
+	id = KIR.6557
+	immediate = {log =  "[GetDateText]: [Root.GetName]: event KIR.6557"}
+	title = KIR.6557.t
+	desc = KIR.6557.d
+	picture = GFX_report_event_serov
+
+	is_triggered_only = yes
+
+	option = {
+		name = KIR.6557.a
+		set_country_flag = K
+		
+		add_ideas = KIR_DongGong_hog
+		add_ideas = KIR_DangDangJie_sec
+		add_ideas = KIR_MingDi_eco
+		add_ideas = KIR_YiXiangJi_for
+		
+		
+		
+	}
+}
